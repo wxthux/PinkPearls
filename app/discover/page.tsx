@@ -57,7 +57,7 @@ export default function DiscoverPage() {
     {
       name: "Alex Rodriguez",
       role: "Former MLB Star",
-      quote: "Elantré delivers quality that matches my standards.",
+      quote: "Pink Pearls delivers quality that matches my standards.",
       image: "/avatar-1.png",
     },
     {
@@ -75,7 +75,7 @@ export default function DiscoverPage() {
     {
       name: "Emma Thompson",
       role: "Startup Founder",
-      quote: "Elantré helped bring our company merchandise to life.",
+      quote: "Pink Pearls helped bring our company merchandise to life.",
       image: "/avatar-11.png",
     },
   ]
@@ -83,17 +83,17 @@ export default function DiscoverPage() {
   return (
     <main className="flex-1">
       {/* Hero Section */}
-      <section className="relative py-20 bg-gradient-to-br from-orange-900/20 to-background">
+      <section className="relative py-20 bg-gradient-to-br from-rose-500/20 to-background">
         <div className="container px-4 md:px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
-              <Badge className="bg-orange-500/10 text-orange-500 border-orange-500/20">
+              <Badge className="bg-red-300/10 text-red-300 border-red-300/20">
                 <Sparkles className="w-4 h-4 mr-2" />
                 Discover Our Story
               </Badge>
               <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
                 Crafting Quality
-                <span className="text-orange-500"> Apparel</span>
+                <span className="text-red-300"> Apparel</span>
                 <br />
                 Since 2015
               </h1>
@@ -103,7 +103,7 @@ export default function DiscoverPage() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link href="/products">
-                  <Button size="lg" className="bg-orange-500 hover:bg-orange-600">
+                  <Button size="lg" className="bg-red-300 hover:bg-rose-400">
                     Shop Now <ArrowRight className="ml-2 h-5 w-5" />
                   </Button>
                 </Link>
@@ -115,7 +115,7 @@ export default function DiscoverPage() {
             <div className="relative">
               <Image
                 src="/hero6.jpg"
-                alt="Elantré Factory"
+                alt="Pink Pearls Factory"
                 width={800}
                 height={500}
                 className="rounded-lg shadow-2xl"
@@ -145,19 +145,19 @@ export default function DiscoverPage() {
               </p>
               <ul className="space-y-3">
                 <li className="flex items-center">
-                  <div className="w-2 h-2 bg-orange-500 rounded-full mr-3"></div>
+                  <div className="w-2 h-2 bg-red-300 rounded-full mr-3"></div>
                   ISO 9001 certified manufacturing processes
                 </li>
                 <li className="flex items-center">
-                  <div className="w-2 h-2 bg-orange-500 rounded-full mr-3"></div>
+                  <div className="w-2 h-2 bg-red-300 rounded-full mr-3"></div>
                   Eco-friendly water-based inks and sustainable materials
                 </li>
                 <li className="flex items-center">
-                  <div className="w-2 h-2 bg-orange-500 rounded-full mr-3"></div>
+                  <div className="w-2 h-2 bg-red-300 rounded-full mr-3"></div>
                   24/7 production capability with same-day turnaround
                 </li>
                 <li className="flex items-center">
-                  <div className="w-2 h-2 bg-orange-500 rounded-full mr-3"></div>
+                  <div className="w-2 h-2 bg-red-300 rounded-full mr-3"></div>
                   Advanced quality control and color matching systems
                 </li>
               </ul>
@@ -210,8 +210,8 @@ export default function DiscoverPage() {
             {values.map((value, index) => (
               <Card key={index} className="text-center">
                 <CardHeader>
-                  <div className="mx-auto w-12 h-12 bg-orange-500/10 rounded-lg flex items-center justify-center mb-4">
-                    <value.icon className="w-6 h-6 text-orange-500" />
+                  <div className="mx-auto w-12 h-12 bg-red-300/10 rounded-lg flex items-center justify-center mb-4">
+                    <value.icon className="w-6 h-6 text-red-300" />
                   </div>
                   <CardTitle className="text-xl">{value.title}</CardTitle>
                 </CardHeader>
@@ -256,7 +256,7 @@ export default function DiscoverPage() {
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Trusted by Industry Leaders</h2>
             <p className="text-xl text-muted-foreground max-w-[600px] mx-auto">
-              From athletes to influencers, see why top personalities choose Elantré for their apparel needs.
+              From athletes to influencers, see why top personalities choose Pink Pearls for their apparel needs.
             </p>
           </div>
 
@@ -290,11 +290,11 @@ export default function DiscoverPage() {
           <div className="text-center space-y-6">
             <h2 className="text-3xl md:text-4xl font-bold">Ready to Create Something Amazing?</h2>
             <p className="text-xl text-muted-foreground max-w-[600px] mx-auto">
-              Join thousands of satisfied customers who trust Elantré for their custom apparel needs.
+              Join thousands of satisfied customers who trust Pink Pearls for their custom apparel needs.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/products">
-                <Button size="lg" className="bg-orange-500 hover:bg-orange-600">
+                <Button size="lg" className="bg-red-300 hover:bg-rose-400">
                   Start Your Order <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
               </Link>

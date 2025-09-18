@@ -83,7 +83,7 @@ export default function AdminProfilePage() {
     return (
       <AdminLayout>
         <div className="p-6 flex items-center justify-center">
-          <div className="animate-spin rounded-full h-32 w-32 border-b-2 border-orange-500"></div>
+          <div className="animate-spin rounded-full h-32 w-32 border-b-2 border-red-300"></div>
         </div>
       </AdminLayout>
     )
@@ -119,7 +119,7 @@ export default function AdminProfilePage() {
               <CardDescription>{formData.email}</CardDescription>
             </CardHeader>
             <CardContent className="text-center space-y-4">
-              <Badge className="bg-orange-500/10 text-orange-500 border-orange-500/20">Administrator</Badge>
+              <Badge className="bg-red-300/10 text-red-300 border-red-300/20">Administrator</Badge>
 
               <div className="space-y-2 text-sm">
                 <div className="flex items-center justify-center space-x-2">
@@ -181,7 +181,7 @@ export default function AdminProfilePage() {
                         onClick={() => setFormData((prev) => ({ ...prev, avatar }))}
                         className={`relative rounded-full p-1 transition-all ${
                           formData.avatar === avatar
-                            ? "ring-2 ring-orange-500 ring-offset-2"
+                            ? "ring-2 ring-red-300 ring-offset-2"
                             : "hover:ring-2 hover:ring-muted-foreground hover:ring-offset-2"
                         }`}
                       >
@@ -196,7 +196,7 @@ export default function AdminProfilePage() {
               </div>
 
               <div className="flex justify-end pt-4 border-t">
-                <Button onClick={handleSave} className="bg-orange-500 hover:bg-orange-600" disabled={isSaving}>
+                <Button onClick={handleSave} className="bg-red-300 hover:bg-rose-400" disabled={isSaving}>
                   <Save className="mr-2 h-4 w-4" />
                   {isSaving ? "Saving..." : "Save Changes"}
                 </Button>

@@ -12,7 +12,7 @@ import { getSupportQuestions } from "@/lib/db/support"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Elantré - Apparel Management System",
+  title: "Pink Pearls - Apparel Management System",
   description: "Manage your apparel products with ease",
 }
 

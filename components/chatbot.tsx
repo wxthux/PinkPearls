@@ -32,8 +32,8 @@ export default function Chatbot({ questions }: ChatbotProps) {
     <Card className="w-full">
       <CardHeader>
         <CardTitle className="flex items-center">
-          <MessageCircle className="mr-2 h-5 w-5 text-orange-500" />
-          Elantré Support
+          <MessageCircle className="mr-2 h-5 w-5 text-red-300" />
+          Pink Pearls Support
         </CardTitle>
         <CardDescription>Select a question below or ask your own</CardDescription>
       </CardHeader>
@@ -44,7 +44,7 @@ export default function Chatbot({ questions }: ChatbotProps) {
               <div
                 key={index}
                 className={`p-3 rounded-lg ${
-                  entry.type === "question" ? "bg-muted ml-auto max-w-[80%]" : "bg-orange-500/10 mr-auto max-w-[80%]"
+                  entry.type === "question" ? "bg-muted ml-auto max-w-[80%]" : "bg-red-300/10 mr-auto max-w-[80%]"
                 }`}
               >
                 {entry.content}
@@ -74,7 +74,7 @@ export default function Chatbot({ questions }: ChatbotProps) {
         </div>
       </CardContent>
       <CardFooter className="border-t pt-4 flex justify-between">
-        <p className="text-xs text-muted-foreground">Need more help? Contact us directly at support@Elantré.com</p>
+        <p className="text-xs text-muted-foreground">Need more help? Contact us directly at support@Pink Pearls.com</p>
       </CardFooter>
     </Card>
   )

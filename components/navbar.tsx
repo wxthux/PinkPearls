@@ -38,7 +38,7 @@ export default function Navbar() {
       <div className="container flex h-16 items-center">
         <div className="mr-4 flex">
           <Link href="/" className="flex items-center space-x-2">
-            <span className="text-xl font-bold text-orange-500">Elantré</span>
+            <span className="text-xl font-bold text-red-300">Pink Pearls</span>
           </Link>
         </div>
 
@@ -48,7 +48,7 @@ export default function Navbar() {
               <Link
                 key={item.name}
                 href={item.href}
-                className="text-sm font-medium transition-colors hover:text-orange-500"
+                className="text-sm font-medium transition-colors hover:text-red-300"
               >
                 {item.name}
               </Link>
@@ -68,7 +68,7 @@ export default function Navbar() {
               <Button variant="outline" size="icon" className="relative">
                 <ShoppingCart className="h-5 w-5" />
                 {itemCount > 0 && (
-                  <Badge className="absolute -top-2 -right-2 h-5 w-5 flex items-center justify-center p-0 bg-orange-500 hover:bg-orange-500">
+                  <Badge className="absolute -top-2 -right-2 h-5 w-5 flex items-center justify-center p-0 bg-red-300 hover:bg-red-300">
                     {itemCount > 99 ? "99+" : itemCount}
                   </Badge>
                 )}
@@ -91,7 +91,7 @@ export default function Navbar() {
             <Button variant="outline" size="icon" className="relative">
               <ShoppingCart className="h-5 w-5" />
               {itemCount > 0 && (
-                <Badge className="absolute -top-2 -right-2 h-5 w-5 flex items-center justify-center p-0 bg-orange-500 hover:bg-orange-500">
+                <Badge className="absolute -top-2 -right-2 h-5 w-5 flex items-center justify-center p-0 bg-red-300 hover:bg-red-300">
                   {itemCount > 99 ? "99+" : itemCount}
                 </Badge>
               )}
@@ -109,7 +109,7 @@ export default function Navbar() {
                   <Link
                     key={item.name}
                     href={item.href}
-                    className="text-lg font-medium transition-colors hover:text-orange-500"
+                    className="text-lg font-medium transition-colors hover:text-red-300"
                     onClick={() => setIsOpen(false)}
                   >
                     {item.name}

@@ -71,7 +71,7 @@ export default function AdminLayout({ children }: AdminLayoutProps) {
   if (isLoading) {
     return (
       <div className="min-h-screen flex items-center justify-center">
-        <div className="animate-spin rounded-full h-32 w-32 border-b-2 border-orange-500"></div>
+        <div className="animate-spin rounded-full h-32 w-32 border-b-2 border-red-300"></div>
       </div>
     )
   }
@@ -82,7 +82,7 @@ export default function AdminLayout({ children }: AdminLayoutProps) {
       <div className="hidden md:fixed md:inset-y-0 md:flex md:w-64 md:flex-col">
         <div className="flex flex-col flex-grow pt-5 bg-card border-r overflow-y-auto">
           <div className="flex items-center flex-shrink-0 px-4">
-            <h1 className="text-xl font-bold text-orange-500">ClothCore Admin</h1>
+            <h1 className="text-xl font-bold text-red-300">ClothCore Admin</h1>
           </div>
 
           <div className="mt-8 flex-grow flex flex-col">
@@ -95,7 +95,7 @@ export default function AdminLayout({ children }: AdminLayoutProps) {
                     href={item.href}
                     className={`group flex items-center px-2 py-2 text-sm font-medium rounded-md transition-colors ${
                       isActive
-                        ? "bg-orange-500 text-white"
+                        ? "bg-red-300 text-white"
                         : "text-muted-foreground hover:bg-muted hover:text-foreground"
                     }`}
                   >
@@ -143,7 +143,7 @@ export default function AdminLayout({ children }: AdminLayoutProps) {
       {/* Mobile Header */}
       <div className="md:hidden">
         <div className="flex items-center justify-between p-4 border-b bg-card">
-          <h1 className="text-lg font-bold text-orange-500">ClothCore Admin</h1>
+          <h1 className="text-lg font-bold text-red-300">ClothCore Admin</h1>
           <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
             <SheetTrigger asChild>
               <Button variant="ghost" size="icon">
@@ -153,7 +153,7 @@ export default function AdminLayout({ children }: AdminLayoutProps) {
             <SheetContent side="left" className="w-64 p-0">
               <div className="flex flex-col h-full">
                 <div className="p-4 border-b">
-                  <h2 className="text-lg font-bold text-orange-500">ClothCore Admin</h2>
+                  <h2 className="text-lg font-bold text-red-300">ClothCore Admin</h2>
                 </div>
 
                 <nav className="flex-1 p-4 space-y-2">
@@ -166,7 +166,7 @@ export default function AdminLayout({ children }: AdminLayoutProps) {
                         onClick={() => setIsMobileMenuOpen(false)}
                         className={`flex items-center px-3 py-2 text-sm font-medium rounded-md transition-colors ${
                           isActive
-                            ? "bg-orange-500 text-white"
+                            ? "bg-red-300 text-white"
                             : "text-muted-foreground hover:bg-muted hover:text-foreground"
                         }`}
                       >

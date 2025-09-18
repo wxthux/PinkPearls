@@ -251,7 +251,7 @@ export default function ProductFormModal({ isOpen, onClose, product, categories 
             <Button type="button" variant="outline" onClick={onClose}>
               Cancel
             </Button>
-            <Button type="submit" className="bg-orange-500 hover:bg-orange-600" disabled={isLoading}>
+            <Button type="submit" className="bg-red-300 hover:bg-rose-400" disabled={isLoading}>
               {isLoading ? "Saving..." : product ? "Update Product" : "Create Product"}
             </Button>
           </div>

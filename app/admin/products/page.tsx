@@ -124,7 +124,7 @@ export default function AdminProductsPage() {
             <h1 className="text-3xl font-bold">Products</h1>
             <p className="text-muted-foreground">Manage your product inventory</p>
           </div>
-          <Button onClick={() => setIsModalOpen(true)} className="bg-orange-500 hover:bg-orange-600">
+          <Button onClick={() => setIsModalOpen(true)} className="bg-red-300 hover:bg-rose-400">
             <Plus className="mr-2 h-4 w-4" />
             Add Product
           </Button>
@@ -214,7 +214,7 @@ export default function AdminProductsPage() {
                       <h3 className="font-semibold line-clamp-1">{product.name}</h3>
                       <p className="text-sm text-muted-foreground line-clamp-2">{product.description}</p>
                       <div className="flex items-center justify-between">
-                        <span className="text-lg font-bold text-orange-500">${product.price.toFixed(2)}</span>
+                        <span className="text-lg font-bold text-red-300">${product.price.toFixed(2)}</span>
                         <Badge
                           variant={
                             product.stock_count > 10 ? "default" : product.stock_count > 0 ? "secondary" : "destructive"
@@ -240,7 +240,7 @@ export default function AdminProductsPage() {
                       ? "Try adjusting your search or filter criteria"
                       : "Get started by adding your first product"}
                   </p>
-                  <Button onClick={() => setIsModalOpen(true)} className="bg-orange-500 hover:bg-orange-600">
+                  <Button onClick={() => setIsModalOpen(true)} className="bg-red-300 hover:bg-rose-400">
                     <Plus className="mr-2 h-4 w-4" />
                     Add Product
                   </Button>
@@ -267,7 +267,7 @@ export default function AdminProductsPage() {
                       variant={currentPage === page ? "default" : "outline"}
                       size="sm"
                       onClick={() => setCurrentPage(page)}
-                      className={currentPage === page ? "bg-orange-500 hover:bg-orange-600" : ""}
+                      className={currentPage === page ? "bg-red-300 hover:bg-rose-400" : ""}
                     >
                       {page}
                     </Button>

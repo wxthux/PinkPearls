@@ -40,16 +40,16 @@ export default async function Home() {
   return (
     <main className="flex-1">
       {/* Hero Section */}
-      <section className="relative py-20 bg-gradient-to-br from-orange-900/20 to-background overflow-hidden">
+      <section className="relative py-20 bg-gradient-to-br from-rose-500/20 to-background overflow-hidden">
         <div className="container px-4 md:px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
-              <Badge className="bg-orange-500/10 text-orange-500 border-orange-500/20">
+              <Badge className="bg-red-300/10 text-red-300 border-red-300/20">
                 <Zap className="w-4 h-4 mr-2" />
                 Premium Custom Apparel
               </Badge>
               <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
-                Welcome to <span className="text-orange-500">Elantré</span>
+                Welcome to <span className="text-red-300">Pink Pearls</span>
               </h1>
               <p className="text-xl text-muted-foreground max-w-[600px]">
                 Transform your ideas into premium custom apparel. From t-shirts to hoodies, we deliver exceptional
@@ -57,7 +57,7 @@ export default async function Home() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link href="/products">
-                  <Button size="lg" className="bg-orange-500 hover:bg-orange-600">
+                  <Button size="lg" className="bg-red-300 hover:bg-rose-400">
                     Browse Products <ArrowRight className="ml-2 h-5 w-5" />
                   </Button>
                 </Link>
@@ -87,8 +87,8 @@ export default async function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {features.map((feature, index) => (
               <div key={index} className="text-center space-y-4">
-                <div className="mx-auto w-12 h-12 bg-orange-500/10 rounded-lg flex items-center justify-center">
-                  <feature.icon className="w-6 h-6 text-orange-500" />
+                <div className="mx-auto w-12 h-12 bg-red-300/10 rounded-lg flex items-center justify-center">
+                  <feature.icon className="w-6 h-6 text-red-300" />
                 </div>
                 <h3 className="text-lg font-semibold">{feature.title}</h3>
                 <p className="text-sm text-muted-foreground">{feature.description}</p>
@@ -154,7 +154,7 @@ export default async function Home() {
                 <CardDescription>Compression training shorts</CardDescription>
               </CardHeader>
               <CardContent>
-                <p className="text-2xl font-bold text-orange-500">Only for $24.99</p>
+                <p className="text-2xl font-bold text-red-300">Only for $24.99</p>
               </CardContent>
             </Card>
 
@@ -167,7 +167,7 @@ export default async function Home() {
                 <CardDescription>Supportive training tights</CardDescription>
               </CardHeader>
               <CardContent>
-                <p className="text-2xl font-bold text-orange-500">Only for $49.99</p>
+                <p className="text-2xl font-bold text-red-300">Only for $49.99</p>
               </CardContent>
             </Card>
 
@@ -180,14 +180,14 @@ export default async function Home() {
                 <CardDescription>Lightweight workout tank</CardDescription>
               </CardHeader>
               <CardContent>
-                <p className="text-2xl font-bold text-orange-500">Only for $19.99</p>
+                <p className="text-2xl font-bold text-red-300">Only for $19.99</p>
               </CardContent>
             </Card>
           </div>
 
           <div className="text-center mt-8">
             <Link href="/products">
-              <Button size="lg" className="bg-orange-500 hover:bg-orange-600">
+              <Button size="lg" className="bg-red-300 hover:bg-rose-400">
                 View All Products <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
             </Link>
@@ -201,11 +201,11 @@ export default async function Home() {
           <div className="text-center space-y-6">
             <h2 className="text-3xl md:text-4xl font-bold">Ready to Get Started?</h2>
             <p className="text-xl text-muted-foreground max-w-[600px] mx-auto">
-              Join thousands of satisfied customers who trust Elantré for their custom apparel needs.
+              Join thousands of satisfied customers who trust Pink Pearls for their custom apparel needs.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/products">
-                <Button size="lg" className="bg-orange-500 hover:bg-orange-600">
+                <Button size="lg" className="bg-red-300 hover:bg-rose-400">
                   Start Your Order <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
               </Link>

@@ -34,7 +34,7 @@ export default function FloatingChatbot({ questions }: FloatingChatbotProps) {
       {
         type: "answer",
         content:
-          "Thank you for your message! For immediate assistance, please contact our support team at support@Elantré.com or call (94) 76 381-3687. You can also select from the common questions below.",
+          "Thank you for your message! For immediate assistance, please contact our support team at support@Pink Pearls.com or call (94) 76 381-3687. You can also select from the common questions below.",
       },
     ])
     setUserInput("")
@@ -50,7 +50,7 @@ export default function FloatingChatbot({ questions }: FloatingChatbotProps) {
           <Button
             onClick={() => setIsOpen(true)}
             size="lg"
-            className="rounded-full w-16 h-16 bg-orange-500 hover:bg-orange-600 shadow-lg hover:shadow-xl transition-all duration-300 animate-pulse"
+            className="rounded-full w-16 h-16 bg-red-300 hover:bg-rose-400 shadow-lg hover:shadow-xl transition-all duration-300 animate-pulse"
           >
             <MessageCircle className="h-8 w-8" />
           </Button>
@@ -60,21 +60,21 @@ export default function FloatingChatbot({ questions }: FloatingChatbotProps) {
       {/* Chat Window */}
       {isOpen && (
         <div className="fixed bottom-6 right-6 z-50 w-96 max-w-[calc(100vw-2rem)]">
-          <Card className="shadow-2xl border-2 border-orange-200">
-            <CardHeader className="bg-orange-500 text-white rounded-t-lg">
+          <Card className="shadow-2xl border-2 border-rose-200">
+            <CardHeader className="bg-red-300 text-white rounded-t-lg">
               <div className="flex items-center justify-between">
                 <div className="flex items-center space-x-2">
                   <Bot className="h-6 w-6" />
                   <div>
-                    <CardTitle className="text-lg">Elantré Assistant</CardTitle>
-                    <CardDescription className="text-orange-100">How can I help you today?</CardDescription>
+                    <CardTitle className="text-lg">Pink Pearls Assistant</CardTitle>
+                    <CardDescription className="text-rose-100">How can I help you today?</CardDescription>
                   </div>
                 </div>
                 <Button
                   variant="ghost"
                   size="icon"
                   onClick={() => setIsOpen(false)}
-                  className="text-white hover:bg-orange-600"
+                  className="text-white hover:bg-rose-400"
                 >
                   <X className="h-5 w-5" />
                 </Button>
@@ -86,7 +86,7 @@ export default function FloatingChatbot({ questions }: FloatingChatbotProps) {
               <div className="h-80 overflow-y-auto p-4 space-y-4">
                 {chatHistory.length === 0 ? (
                   <div className="text-center py-8">
-                    <Bot className="mx-auto h-12 w-12 text-orange-500 mb-4" />
+                    <Bot className="mx-auto h-12 w-12 text-red-300 mb-4" />
                     <p className="text-muted-foreground">
                       Welcome! I'm here to help. Select a question below or type your own.
                     </p>
@@ -97,15 +97,15 @@ export default function FloatingChatbot({ questions }: FloatingChatbotProps) {
                       <div
                         className={`max-w-[80%] p-3 rounded-lg ${
                           entry.type === "user"
-                            ? "bg-orange-500 text-white"
+                            ? "bg-red-300 text-white"
                             : entry.type === "question"
                               ? "bg-muted"
-                              : "bg-orange-50 border border-orange-200"
+                              : "bg-rose-50 border border-rose-200"
                         }`}
                       >
                         {entry.type === "answer" && (
                           <div className="flex items-center space-x-2 mb-2">
-                            <Bot className="h-4 w-4 text-orange-500" />
+                            <Bot className="h-4 w-4 text-red-300" />
                             <Badge variant="secondary" className="text-xs">
                               Assistant
                             </Badge>
@@ -128,7 +128,7 @@ export default function FloatingChatbot({ questions }: FloatingChatbotProps) {
                     onKeyPress={(e) => e.key === "Enter" && handleUserMessage()}
                     className="flex-1"
                   />
-                  <Button onClick={handleUserMessage} size="icon" className="bg-orange-500 hover:bg-orange-600">
+                  <Button onClick={handleUserMessage} size="icon" className="bg-red-300 hover:bg-rose-400">
                     <Send className="h-4 w-4" />
                   </Button>
                 </div>
@@ -142,7 +142,7 @@ export default function FloatingChatbot({ questions }: FloatingChatbotProps) {
                         <Button
                           key={question.id}
                           variant="ghost"
-                          className="w-full justify-start text-left h-auto py-2 px-2 text-xs hover:bg-orange-50"
+                          className="w-full justify-start text-left h-auto py-2 px-2 text-xs hover:bg-rose-50"
                           onClick={() => handleQuestionClick(question)}
                         >
                           <span className="line-clamp-2">{question.question}</span>

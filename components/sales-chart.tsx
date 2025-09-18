@@ -39,7 +39,7 @@ export default function SalesChart({ data }: SalesChartProps) {
                     </div>
                     <div className="flex flex-col">
                       <span className="text-[0.70rem] uppercase text-muted-foreground">Sales</span>
-                      <span className="font-bold text-orange-500">${payload[0].value}</span>
+                      <span className="font-bold text-red-300">${payload[0].value}</span>
                     </div>
                   </div>
                 </div>
@@ -51,11 +51,11 @@ export default function SalesChart({ data }: SalesChartProps) {
         <Line
           type="monotone"
           dataKey="sales"
-          stroke="#f97316"
+          stroke="#f43f5e"
           strokeWidth={2}
           activeDot={{
             r: 6,
-            style: { fill: "#f97316", opacity: 0.8 },
+            style: { fill: "#f43f5e", opacity: 0.8 },
           }}
         />
       </LineChart>

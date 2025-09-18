@@ -49,11 +49,11 @@ export default function AdminLoginPage() {
   }
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-orange-900/20 to-background p-4">
+    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-rose-500/20 to-background p-4">
       <Card className="w-full max-w-md">
         <CardHeader className="text-center">
-          <div className="mx-auto w-12 h-12 bg-orange-500/10 rounded-lg flex items-center justify-center mb-4">
-            <Shield className="w-6 h-6 text-orange-500" />
+          <div className="mx-auto w-12 h-12 bg-red-300/10 rounded-lg flex items-center justify-center mb-4">
+            <Shield className="w-6 h-6 text-red-300" />
           </div>
           <CardTitle className="text-2xl">Admin Login</CardTitle>
           <CardDescription>Sign in to access the ClothCore admin panel</CardDescription>
@@ -100,13 +100,13 @@ export default function AdminLoginPage() {
               </Alert>
             )}
 
-            <Button type="submit" className="w-full bg-orange-500 hover:bg-orange-600" disabled={isLoading}>
+            <Button type="submit" className="w-full bg-red-300 hover:bg-rose-400" disabled={isLoading}>
               {isLoading ? "Signing in..." : "Sign In"}
             </Button>
           </form>
 
           <div className="mt-6 text-center">
-            <Link href="/" className="text-sm text-muted-foreground hover:text-orange-500">
+            <Link href="/" className="text-sm text-muted-foreground hover:text-red-300">
               ← Back to main site
             </Link>
           </div>

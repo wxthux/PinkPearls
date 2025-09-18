@@ -26,7 +26,7 @@ export default function ProductDetailModal({ product, isOpen, onClose }: Product
   const isLowStock = product.stock_count > 0 && product.stock_count < 10
 
   const handleShare = () => {
-    const text = `Check out this awesome product: ${product.name} - $${product.price}\n\n${product.description}\n\nAvailable at Elantré!`
+    const text = `Check out this awesome product: ${product.name} - $${product.price}\n\n${product.description}\n\nAvailable at Pink Pearls!`
     const url = `https://wa.me/?text=${encodeURIComponent(text)}`
     window.open(url, "_blank")
   }
@@ -72,7 +72,7 @@ export default function ProductDetailModal({ product, isOpen, onClose }: Product
             <div>
               <div className="flex items-start justify-between mb-2">
                 <h1 className="text-3xl font-bold">{product.name}</h1>
-                <div className="text-2xl font-bold text-orange-500">${product.price.toFixed(2)}</div>
+                <div className="text-2xl font-bold text-red-300">${product.price.toFixed(2)}</div>
               </div>
               <p className="text-muted-foreground">{product.categories.name}</p>
             </div>
@@ -126,7 +126,7 @@ export default function ProductDetailModal({ product, isOpen, onClose }: Product
               {/* Action Buttons */}
               <div className="space-y-3">
                 <Button
-                  className="w-full bg-orange-500 hover:bg-orange-600"
+                  className="w-full bg-red-300 hover:bg-rose-400"
                   size="lg"
                   onClick={handleAddToCart}
                   disabled={!isInStock}

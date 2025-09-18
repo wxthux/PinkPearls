@@ -71,7 +71,7 @@ export default function ProductCard({ product }: ProductCardProps) {
               <h3 className="font-semibold text-lg line-clamp-1">{product.name}</h3>
               <p className="text-sm text-muted-foreground">{product.categories.name}</p>
             </div>
-            <div className="text-lg font-bold text-orange-500">${product.price.toFixed(2)}</div>
+            <div className="text-lg font-bold text-red-300">${product.price.toFixed(2)}</div>
           </div>
         </CardHeader>
 
@@ -103,7 +103,7 @@ export default function ProductCard({ product }: ProductCardProps) {
 
         <CardFooter className="p-4 pt-0">
           <Button
-            className="w-full bg-orange-500 hover:bg-orange-600"
+            className="w-full bg-red-300 hover:bg-rose-400"
             disabled={!isInStock}
             onClick={handleQuickAdd}
             size="sm"

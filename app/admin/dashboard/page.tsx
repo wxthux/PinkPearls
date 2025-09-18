@@ -125,8 +125,8 @@ export default async function AdminDashboardPage() {
                 {stats.topSellingProducts.map((product, index) => (
                   <div key={product.id} className="flex items-center justify-between">
                     <div className="flex items-center space-x-3">
-                      <div className="w-8 h-8 bg-orange-500/10 rounded-full flex items-center justify-center">
-                        <span className="text-sm font-medium text-orange-500">#{index + 1}</span>
+                      <div className="w-8 h-8 bg-red-300/10 rounded-full flex items-center justify-center">
+                        <span className="text-sm font-medium text-red-300">#{index + 1}</span>
                       </div>
                       <div>
                         <p className="font-medium">{product.name}</p>

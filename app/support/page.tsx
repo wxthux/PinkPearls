@@ -17,7 +17,7 @@ export default async function SupportPage() {
       icon: Mail,
       title: "Email Support",
       description: "Get detailed help via email",
-      details: "support@Elantré.com",
+      details: "support@Pink Pearls.com",
       availability: "24/7 - Response within 2 hours",
     },
     {
@@ -45,8 +45,8 @@ export default async function SupportPage() {
           {contactMethods.map((method, index) => (
             <Card key={index} className="text-center">
               <CardHeader>
-                <div className="mx-auto w-12 h-12 bg-orange-500/10 rounded-lg flex items-center justify-center mb-4">
-                  <method.icon className="w-6 h-6 text-orange-500" />
+                <div className="mx-auto w-12 h-12 bg-red-300/10 rounded-lg flex items-center justify-center mb-4">
+                  <method.icon className="w-6 h-6 text-red-300" />
                 </div>
                 <CardTitle>{method.title}</CardTitle>
                 <CardDescription>{method.description}</CardDescription>
@@ -85,7 +85,7 @@ export default async function SupportPage() {
             <Card>
               <CardHeader>
                 <CardTitle className="flex items-center">
-                  <HelpCircle className="mr-2 h-5 w-5 text-orange-500" />
+                  <HelpCircle className="mr-2 h-5 w-5 text-red-300" />
                   Send us a Message
                 </CardTitle>
                 <CardDescription>Fill out the form below and we'll get back to you within 2 hours</CardDescription>
@@ -129,7 +129,7 @@ export default async function SupportPage() {
                   </label>
                   <Textarea id="message" placeholder="Please describe your question or issue in detail..." rows={5} />
                 </div>
-                <Button className="w-full bg-orange-500 hover:bg-orange-600">Send Message</Button>
+                <Button className="w-full bg-red-300 hover:bg-rose-400">Send Message</Button>
               </CardContent>
             </Card>
           </div>
@@ -143,9 +143,9 @@ export default async function SupportPage() {
               </CardHeader>
               <CardContent className="space-y-4">
                 <div className="flex items-start space-x-3">
-                  <MapPin className="h-5 w-5 text-orange-500 mt-0.5" />
+                  <MapPin className="h-5 w-5 text-red-300 mt-0.5" />
                   <div>
-                    <p className="font-medium">Elantré Manufacturing</p>
+                    <p className="font-medium">Pink Pearls Manufacturing</p>
                     <p className="text-muted-foreground">
                       No: 888,
                       <br />
@@ -156,7 +156,7 @@ export default async function SupportPage() {
                   </div>
                 </div>
                 <div className="flex items-center space-x-3">
-                  <Clock className="h-5 w-5 text-orange-500" />
+                  <Clock className="h-5 w-5 text-red-300" />
                   <div>
                     <p className="font-medium">Business Hours</p>
                     <p className="text-muted-foreground">
@@ -181,13 +181,13 @@ export default async function SupportPage() {
               </CardHeader>
               <CardContent>
                 <div className="text-center py-6">
-                  <MessageCircle className="mx-auto h-16 w-16 text-orange-500 mb-4" />
+                  <MessageCircle className="mx-auto h-16 w-16 text-red-300 mb-4" />
                   <p className="text-muted-foreground mb-4">
                     Click the chat button in the bottom right corner to get instant answers to common questions.
                   </p>
                   <div className="flex items-center justify-center space-x-2">
-                    <div className="w-3 h-3 bg-orange-500 rounded-full animate-pulse"></div>
-                    <span className="text-sm text-orange-500 font-medium">Available 24/7</span>
+                    <div className="w-3 h-3 bg-red-300 rounded-full animate-pulse"></div>
+                    <span className="text-sm text-red-300 font-medium">Available 24/7</span>
                   </div>
                 </div>
               </CardContent>

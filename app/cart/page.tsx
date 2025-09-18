@@ -19,7 +19,7 @@ export default function CartPage() {
     setIsCheckingOut(true)
 
     // Create WhatsApp message
-    let message = "🛍️ *New Order Request from Elantré*\n\n"
+    let message = "🛍️ *New Order Request from Pink Pearls*\n\n"
     message += "📋 *Order Details:*\n"
 
     state.items.forEach((item, index) => {
@@ -31,7 +31,7 @@ export default function CartPage() {
 
     message += `💰 *Total Amount: $${getCartTotal().toFixed(2)}*\n\n`
     message += "📞 Please confirm this order and provide delivery details.\n"
-    message += "Thank you for choosing Elantré! 🙏"
+    message += "Thank you for choosing Pink Pearls! 🙏"
 
     const encodedMessage = encodeURIComponent(message)
     const whatsappUrl = `https://wa.me/94763813687?text=${encodedMessage}`
@@ -51,7 +51,7 @@ export default function CartPage() {
               Looks like you haven't added any items to your cart yet. Start shopping to fill it up!
             </p>
             <Link href="/products">
-              <Button size="lg" className="bg-orange-500 hover:bg-orange-600">
+              <Button size="lg" className="bg-red-300 hover:bg-rose-400">
                 Continue Shopping
               </Button>
             </Link>
@@ -171,7 +171,7 @@ export default function CartPage() {
 
                 <div className="space-y-3 pt-4">
                   <Button
-                    className="w-full bg-orange-500 hover:bg-orange-600"
+                    className="w-full bg-red-300 hover:bg-rose-400"
                     size="lg"
                     onClick={handleCheckout}
                     disabled={isCheckingOut}

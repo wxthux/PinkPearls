@@ -80,13 +80,13 @@ export default function AboutPage() {
   return (
     <main className="flex-1">
       {/* Hero Section */}
-      <section className="py-20 bg-gradient-to-br from-orange-900/20 to-background">
+      <section className="py-20 bg-gradient-to-br from-rose-500/20 to-background">
         <div className="container px-4 md:px-6">
           <div className="text-center space-y-6">
-            <Badge className="bg-orange-500/10 text-orange-500 border-orange-500/20">About Elantré</Badge>
+            <Badge className="bg-red-300/10 text-red-300 border-red-300/20">About Pink Pearls</Badge>
             <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
               Crafting Stories Through
-              <span className="text-orange-500"> Custom Apparel</span>
+              <span className="text-red-300"> Custom Apparel</span>
             </h1>
             <p className="text-xl text-muted-foreground max-w-[800px] mx-auto">
               Since 2015, we've been transforming ideas into wearable art, helping businesses, organizations, and
@@ -102,8 +102,8 @@ export default function AboutPage() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {stats.map((stat, index) => (
               <div key={index} className="text-center">
-                <div className="mx-auto w-12 h-12 bg-orange-500/10 rounded-lg flex items-center justify-center mb-4">
-                  <stat.icon className="w-6 h-6 text-orange-500" />
+                <div className="mx-auto w-12 h-12 bg-red-300/10 rounded-lg flex items-center justify-center mb-4">
+                  <stat.icon className="w-6 h-6 text-red-300" />
                 </div>
                 <div className="text-3xl font-bold mb-2">{stat.value}</div>
                 <div className="text-sm text-muted-foreground">{stat.label}</div>
@@ -120,7 +120,7 @@ export default function AboutPage() {
             <div className="space-y-6">
               <h2 className="text-3xl md:text-4xl font-bold">Our Story</h2>
               <p className="text-muted-foreground text-lg">
-                Elantré began with a simple belief: everyone deserves access to high-quality, custom apparel that
+                Pink Pearls began with a simple belief: everyone deserves access to high-quality, custom apparel that
                 tells their story. What started as a small operation in a garage has grown into one of the industry's
                 most trusted names.
               </p>
@@ -138,7 +138,7 @@ export default function AboutPage() {
             <div className="relative">
               <Image
                 src="/hero5.jpg"
-                alt="Elantré Story"
+                alt="Pink Pearls Story"
                 width={800}
                 height={500}
                 className="rounded-lg shadow-lg"
@@ -154,7 +154,7 @@ export default function AboutPage() {
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Journey</h2>
             <p className="text-xl text-muted-foreground max-w-[600px] mx-auto">
-              Key milestones that shaped Elantré into the company we are today.
+              Key milestones that shaped Pink Pearls into the company we are today.
             </p>
           </div>
 
@@ -162,7 +162,7 @@ export default function AboutPage() {
             {milestones.map((milestone, index) => (
               <div key={index} className="flex flex-col md:flex-row gap-6 items-start">
                 <div className="flex-shrink-0">
-                  <div className="w-20 h-20 bg-orange-500 rounded-full flex items-center justify-center text-white font-bold text-lg">
+                  <div className="w-20 h-20 bg-red-300 rounded-full flex items-center justify-center text-white font-bold text-lg">
                     {milestone.year}
                   </div>
                 </div>
@@ -186,7 +186,7 @@ export default function AboutPage() {
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Meet Our Team</h2>
             <p className="text-xl text-muted-foreground max-w-[600px] mx-auto">
-              The passionate individuals behind Elantré's success.
+              The passionate individuals behind Pink Pearls's success.
             </p>
           </div>
 
@@ -203,7 +203,7 @@ export default function AboutPage() {
                     />
                   </div>
                   <CardTitle className="text-xl">{member.name}</CardTitle>
-                  <CardDescription className="text-orange-500 font-medium">{member.role}</CardDescription>
+                  <CardDescription className="text-red-300 font-medium">{member.role}</CardDescription>
                 </CardHeader>
                 <CardContent>
                   <p className="text-sm text-muted-foreground">{member.bio}</p>
@@ -227,8 +227,8 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <Card className="text-center">
               <CardHeader>
-                <div className="mx-auto w-12 h-12 bg-orange-500/10 rounded-lg flex items-center justify-center mb-4">
-                  <MapPin className="w-6 h-6 text-orange-500" />
+                <div className="mx-auto w-12 h-12 bg-red-300/10 rounded-lg flex items-center justify-center mb-4">
+                  <MapPin className="w-6 h-6 text-red-300" />
                 </div>
                 <CardTitle>Address</CardTitle>
               </CardHeader>
@@ -245,8 +245,8 @@ export default function AboutPage() {
 
             <Card className="text-center">
               <CardHeader>
-                <div className="mx-auto w-12 h-12 bg-orange-500/10 rounded-lg flex items-center justify-center mb-4">
-                  <Phone className="w-6 h-6 text-orange-500" />
+                <div className="mx-auto w-12 h-12 bg-red-300/10 rounded-lg flex items-center justify-center mb-4">
+                  <Phone className="w-6 h-6 text-red-300" />
                 </div>
                 <CardTitle>Phone</CardTitle>
               </CardHeader>
@@ -263,18 +263,18 @@ export default function AboutPage() {
 
             <Card className="text-center">
               <CardHeader>
-                <div className="mx-auto w-12 h-12 bg-orange-500/10 rounded-lg flex items-center justify-center mb-4">
-                  <Mail className="w-6 h-6 text-orange-500" />
+                <div className="mx-auto w-12 h-12 bg-red-300/10 rounded-lg flex items-center justify-center mb-4">
+                  <Mail className="w-6 h-6 text-red-300" />
                 </div>
                 <CardTitle>Email</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
-                  info@Elantré.com
+                  info@Pink Pearls.com
                   <br />
-                  sales@Elantré.com
+                  sales@Pink Pearls.com
                   <br />
-                  support@Elantré.com
+                  support@Pink Pearls.com
                 </p>
               </CardContent>
             </Card>
@@ -293,7 +293,7 @@ export default function AboutPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/products">
-                <Button size="lg" className="bg-orange-500 hover:bg-orange-600">
+                <Button size="lg" className="bg-red-300 hover:bg-rose-400">
                   Start Your Project
                 </Button>
               </Link>

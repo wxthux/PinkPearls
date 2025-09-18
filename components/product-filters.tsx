@@ -78,7 +78,7 @@ export default function ProductFilters({ categories }: ProductFiltersProps) {
               variant={currentCategory === category.id.toString() ? "default" : "ghost"}
               className={
                 currentCategory === category.id.toString()
-                  ? "w-full justify-start bg-orange-500 hover:bg-orange-600"
+                  ? "w-full justify-start bg-red-300 hover:bg-rose-400"
                   : "w-full justify-start"
               }
               onClick={() => handleCategoryClick(category.id.toString())}
