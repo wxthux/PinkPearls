@@ -41,7 +41,7 @@ export default function AboutPage() {
 
   const team = [
     {
-      name: "Vimansa Abhayasekara",
+      name: "Thanuda Warnakulage",
       role: "CEO & Founder",
       bio: "15+ years in textile industry, passionate about sustainable manufacturing.",
       image:
@@ -270,11 +270,11 @@ export default function AboutPage() {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
-                  info@Pink Pearls.com
+                  nethmisd2005@gmail.com
                   <br />
-                  sales@Pink Pearls.com
+                  nethmisd2005@gmail.com
                   <br />
-                  support@Pink Pearls.com
+                  nethmisd2005@gmail.com
                 </p>
               </CardContent>
             </Card>

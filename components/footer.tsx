@@ -82,7 +82,7 @@ export default function Footer() {
               </div>
               <div className="flex items-center space-x-2">
                 <Mail className="h-4 w-4 text-red-300" />
-                <span className="text-muted-foreground">info@Pink Pearls.com</span>
+                <span className="text-muted-foreground">nethmisd2005@gmail.com</span>
               </div>
             </div>
           </div>
@@ -93,7 +93,7 @@ export default function Footer() {
             © 2025 <span className="font-medium text-foreground">Pink Pearls</span> 💎 Less is more, perfected
           </p>
           <p className="text-xs text-muted-foreground">
-            Designed by <span className="font-medium">Vimansa Abhayasekara</span> 🧶
+            Designed by <span className="font-medium">Thanuda Warnakulage</span> 🧶
           </p>
         </div>
       </div>
